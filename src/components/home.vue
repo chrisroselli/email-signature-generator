@@ -3,7 +3,7 @@
   <h1>{{ msg }}</h1>
    <router-link to="/input-information">Input Information</router-link><br>
    <router-link to="/output-signature">Output Signature</router-link>
-   <p>Git'd</p>
+   <p>Git'd from home.</p>
 </div>
     
 </template>
