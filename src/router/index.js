@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import home from '@/components/home'
 import outputSignature from '@/components/output-signature'
 import inputInformation from '@/components/input-information'
 import Buefy from 'buefy'
@@ -11,11 +10,6 @@ Vue.use(Router)
 
 export default new Router({
   routes: [
-    {
-      path: '/',
-      name: 'Home',
-      component: home
-    },
     {
       path: '/output-signature',
       name: 'outputSignature',

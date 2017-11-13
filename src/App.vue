@@ -13,9 +13,17 @@
         </div>
       </div>
     </section>
-  
-   <router-view/>
-   
+    <div class="container">
+    <div class="columns">
+      <div class="column" id="input-info">
+        <inputInformation :fullName="fullName, title, phone, email" />
+          <!-- <a @click.once="" class="button is-success" >go</a> -->
+      </div>
+      <div class="column">
+        <outputSignature :fullName="fullName, title, phone, email" />
+      </div>
+    </div>
+    </div>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -32,9 +40,22 @@
 
 <script>
 export default {
-  name: 'app'
+  name: 'app',
+  data: function () {
+    return {
+      fullName: 'Full Name',
+      title: 'Title',
+      phone: 'Phone Number',
+      email: 'Email'
+    }
+  }
 }
 </script>
+
+
+
+
+
 
 <style>
 #container {
