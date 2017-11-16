@@ -13,14 +13,17 @@
         </div>
       </div>
     </section>
-    <div class="container">
+
+    <div class="container main">
     <div class="columns">
       <div class="column" id="input-info">
-        <inputInformation :fullName="fullName, title, phone, email" />
-          <!-- <a @click.once="" class="button is-success" >go</a> -->
+        <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" :submitted.sync="submitted"  />
+
+        <input type="button" value="button" :disabled="submitted">
+        
       </div>
       <div class="column">
-        <outputSignature :fullName="fullName, title, phone, email" />
+        <outputSignature :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
       </div>
     </div>
     </div>
@@ -46,7 +49,8 @@ export default {
       fullName: 'Full Name',
       title: 'Title',
       phone: 'Phone Number',
-      email: 'Email'
+      email: 'Email',
+      submitted: false
     }
   }
 }
@@ -58,7 +62,10 @@ export default {
 
 
 <style>
-#container {
+input:disabled {
+    background: #dddddd;
+}
+.container.main {
   margin-top: 40px;
 }
 #footer {
