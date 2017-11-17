@@ -1,7 +1,7 @@
 <template>
   <div>
       <section>
-        <h3 class="subtitle">Output Signature</h3>
+       
         <table border="0" cellspacing="0" cellpadding="0" width="470" style="width: 470px;">
             <tbody>
                 <tr valign="top">

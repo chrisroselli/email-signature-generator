@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div>
+  
     <section class="hero is-primary">
       <div class="hero-body">
         <div class="container">
@@ -13,23 +13,60 @@
         </div>
       </div>
     </section>
-    <transition name="fade">
-    <div v-if="show" class="container main">
-      
-    <div class="columns">
-      <div class="column" id="input-info">
-        <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
+<!----------------- Header Ends ---------------->
 
-        <button v-on:click="show = !show" class="button is-success" type="submit" v-bind:disabled="!isValid">Copy Signature</button>
+    <div class="container main">  
+      <div>  
+        <div class="columns">
+<!----------------- Input Information ---------------->  
+          <div class="column" id="input-info">
+              <h3 class="subtitle">Input Information</h3>
+            <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
 
+<!----------------- Button ---------------->   
+            <button @click="toggleShow, $modal.show('output')" class="button is-success" type="submit" v-bind:disabled="!isValid">
+                Copy Signature
+            </button>
+            <button class="button is-success" type="submit" v-bind:disabled="!isReset">
+                Reset
+            </button>
+
+          </div>
+<!----------------- Output Signature ---------------->       
+          <div class="column">
+              <h3 class="subtitle">Output Signature</h3>
+            <outputSignature :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
+          </div>
+        </div>
       </div>
-      <div class="column">
-        <outputSignature :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
-      </div>
-    </div>
+ <!----------------- Modal ---------------->    
+ 
+        <modal name="output" :height="350">
+         
+          <div class="sign-box level-item has-text-centered">
+              <div class="output-btn">
+                  <p class="field">
+                      <a class="button is-small" @click="$modal.hide('output')">
+                        <span class="icon is-small">
+                          <i class="fa fa-times"></i>
+                        </span>
+                      </a>
+                    </p>
+                </div>
+            <outputSignature :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email"/>
+           
+          </div>
 
+          <div class="gif-box level-item has-text-centered">
+              <p>Place cursor at bottom-right corner of <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;"
+                width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png">, click and drag to top-left corner of Treehouse logo. </p>
+          <img src="./assets/copy.gif" alt="">
+        </div>
+          </modal>
+  
     </div>
-  </transition>
+ 
+<!----------------- Footer ---------------->
     <footer class="footer" id="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -39,12 +76,16 @@
             </div>
         </div>
     </footer>
-  </div>
+  
  
   </div>
+
 </template>
 
+<!-------------------------- Scripts ---------------------------->
+
 <script>
+
 export default {
   name: 'app',
   data: function () {
@@ -53,12 +94,26 @@ export default {
       title: 'Title',
       phone: 'Phone Number',
       email: 'Email',
-      show: true
+      isShowing: false
     }
   },
   computed: {
     isValid: function () {
       return this.fullName !== 'Full Name' && this.title !== 'Title' && this.phone !== 'Phone Number' && this.email !== 'Email'
+    },
+    isReset: function () {
+      return this.fullName !== 'Full Name' || this.title !== 'Title' || this.phone !== 'Phone Number' || this.email !== 'Email'
+    }
+  },
+  methods: {
+    toggleShow () {
+      this.isShowing = !this.isShowing
+    },
+    show () {
+      this.$modal.show('output')
+    },
+    hide () {
+      this.$modal.hide('output')
     }
   }
 }
@@ -66,10 +121,42 @@ export default {
 
 
 
-
-
-
+<!-------------------------- Styles ---------------------------->
 <style>
+.output-btn {
+    right: 0;
+    position: absolute;
+    top: 0;
+    margin-right: 5px;
+}
+.sign-box {
+    margin-top: 30px;
+    margin-left: 60px;
+}
+.gif-box {
+  margin-top: 30px;
+  margin-left: 1px;
+  background-color: #efefef;
+  padding: 20px;
+  border-top: 1px dashed #6fac44;
+}
+.gif-box p {
+   text-align: left;
+   padding-right: 20px;
+}
+.gif-box img {
+   width:250px;
+}
+.fade-enter-active,
+.fade-leave-active {
+  -webkit-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
 input:disabled {
     background: #dddddd;
 }

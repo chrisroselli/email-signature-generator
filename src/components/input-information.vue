@@ -2,7 +2,7 @@
   <div>
             
     <section>
-        <h3 class="subtitle">Input Information</h3>
+       
         <div class="field">
           <div class="control has-icons-left has-icons-right">
             <input class="input" onblur="if (this.value == '') {this.value = 'Full Name';}" onfocus="if (this.value == 'Full Name') {this.value = '';}"

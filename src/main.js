@@ -5,6 +5,9 @@ import App from './App'
 import inputInformation from './components/input-information.vue'
 import outputSignature from './components/output-signature.vue'
 import router from './router'
+import VModal from 'vue-js-modal'
+
+Vue.use(VModal)
 
 Vue.config.productionTip = false
 
