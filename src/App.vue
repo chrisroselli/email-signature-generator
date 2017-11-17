@@ -13,20 +13,23 @@
         </div>
       </div>
     </section>
-
-    <div class="container main">
+    <transition name="fade">
+    <div v-if="show" class="container main">
+      
     <div class="columns">
       <div class="column" id="input-info">
-        <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" :submitted.sync="submitted"  />
+        <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
 
-        <input type="button" value="button" :disabled="submitted">
-        
+        <button v-on:click="show = !show" class="button is-success" type="submit" v-bind:disabled="!isValid">Copy Signature</button>
+
       </div>
       <div class="column">
         <outputSignature :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
       </div>
     </div>
+
     </div>
+  </transition>
     <footer class="footer" id="footer">
         <div class="container">
             <div class="content has-text-centered">
@@ -50,7 +53,12 @@ export default {
       title: 'Title',
       phone: 'Phone Number',
       email: 'Email',
-      submitted: false
+      show: true
+    }
+  },
+  computed: {
+    isValid: function () {
+      return this.fullName !== 'Full Name' && this.title !== 'Title' && this.phone !== 'Phone Number' && this.email !== 'Email'
     }
   }
 }
@@ -81,7 +89,10 @@ input:disabled {
 .hero.is-primary {
   background-color: #6fac44;
 }
-.button.is-success {
+.button {
+  margin-top: 10px;
+}
+.button.is-success, .button.is-success[disabled] {
   background-color: #6fac44;
   border-color: transparent;
   color: #fff;

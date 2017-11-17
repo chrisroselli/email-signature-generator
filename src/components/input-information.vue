@@ -30,7 +30,7 @@
         </div>
         <div class="field">
           <div class="control has-icons-left has-icons-right">
-            <input class="input" onblur="if (this.value == '') {this.value = 'Email';}" onfocus="if (this.value == 'Email') {this.value = '';}" :value="email" @input="$emit('update:email', $event.target.value)" type="email" @blur="submitted=true">
+            <input class="input" onblur="if (this.value == '') {this.value = 'Email';}" onfocus="if (this.value == 'Email') {this.value = '';}" :value="email" @input="$emit('update:email', $event.target.value)" type="email">
                     <span class="icon is-small is-left">
                       <i class="fa fa-envelope"></i>
                     </span>
@@ -60,10 +60,6 @@ export default {
     },
     email: {
       type: String,
-      required: true
-    },
-    submitted: {
-      type: Boolean,
       required: true
     }
   }
