@@ -27,7 +27,7 @@
             <button @click="toggleShow, $modal.show('output')" class="button is-success" type="submit" v-bind:disabled="!isValid">
                 Copy Signature
             </button>
-            <button class="button is-success" type="submit" v-bind:disabled="!isReset">
+            <button @click.prevent="reset" class="button is-success" type="submit" v-bind:disabled="!isReset">
                 Reset
             </button>
 
@@ -114,6 +114,12 @@ export default {
     },
     hide () {
       this.$modal.hide('output')
+    },
+    reset () {
+      this.fullName = ''
+      this.title = ''
+      this.phone = ''
+      this.email = ''
     }
   }
 }
