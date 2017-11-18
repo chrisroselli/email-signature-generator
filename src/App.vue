@@ -8,7 +8,7 @@
               <img src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/treehouse-2017-all_white-2.png" alt="" width="250" />
           </div>
         <h1 class="sub-text title has-text-centered">
-            <p>Treehouse Email Signature Generator</p> 
+            <p>Email Signature Generator</p> 
         </h1>
         </div>
       </div>
@@ -58,8 +58,7 @@
           </div>
 
           <div class="gif-box level-item has-text-centered">
-              <p>Place cursor at bottom-right corner of <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;"
-                width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png">, click and drag to top-left corner of Treehouse logo. </p>
+              <p>1. Place cursor at bottom-right corner of <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png"> click and drag to the top-left corner of the Treehouse logo and copy. <br> 2. Paste into your Outlook signature preferences panel.</p>
           <img src="./assets/copy.gif" alt="">
         </div>
           </modal>
@@ -71,7 +70,7 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    &copy;Treehouse Internet Group Inc.
+                    &copy;2017 Treehouse Internet Group Inc.
                 </p>
             </div>
         </div>
@@ -116,10 +115,10 @@ export default {
       this.$modal.hide('output')
     },
     reset () {
-      this.fullName = ''
-      this.title = ''
-      this.phone = ''
-      this.email = ''
+      this.fullName = 'Full Name'
+      this.title = 'Title'
+      this.phone = 'Phone Number'
+      this.email = 'Email'
     }
   }
 }
@@ -149,6 +148,7 @@ export default {
 .gif-box p {
    text-align: left;
    padding-right: 20px;
+   font-size: 14px;
 }
 .gif-box img {
    width:250px;
