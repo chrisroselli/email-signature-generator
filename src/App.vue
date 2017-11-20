@@ -127,7 +127,7 @@ export default {
 
 
 <!-------------------------- Styles ---------------------------->
-<style>
+<style scoped>
 .output-btn {
     right: 0;
     position: absolute;
