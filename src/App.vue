@@ -127,7 +127,7 @@ export default {
 
 
 <!-------------------------- Styles ---------------------------->
-<style>
+<style scoped>
 .output-btn {
     right: 0;
     position: absolute;
@@ -180,7 +180,7 @@ input:disabled {
   margin-right: 100px;
 }
 .hero.is-primary {
-  background-color: #6fac44;
+  background-color: rgb(111, 172, 68);
 }
 .button {
   margin-top: 10px;
