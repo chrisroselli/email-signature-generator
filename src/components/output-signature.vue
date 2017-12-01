@@ -44,8 +44,8 @@
                   </td>
                   <td valign="top" style=
                   "vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
-                  <a href="https://www.treehouseinternetgroup.com/" style=
-                  "color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;" target="_blank">
+                  <a href="https://www.treehouseinternetgroup.com/" target="_blank" style=
+                  "color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;">
                     www.treehouseinternetgroup.com</a>
                     &nbsp;&nbsp;
                   </td>
