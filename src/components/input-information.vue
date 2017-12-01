@@ -2,8 +2,9 @@
   <div>
             
     <section>
-       
+      <form @submit.prevent="validateBeforeSubmit">
         <div class="field">
+    
           <div class="control has-icons-left has-icons-right">
             <input class="input" onblur="if (this.value == '') {this.value = 'Full Name';}" onfocus="if (this.value == 'Full Name') {this.value = '';}"
                 :value="fullName" @input="$emit('update:fullName', $event.target.value)" type="text">
@@ -37,7 +38,10 @@
                       <i class="fa fa-envelope"></i>
                     </span>
           </div>
+          
         </div>
+        <!-- <button id="submit-btn" class="button is-primary" type="submit">Submit</button> -->
+        </form>
     </section>
                
   </div>
@@ -63,6 +67,19 @@ export default {
     email: {
       type: String,
       required: true
+    }
+  },
+  methods: {
+    validateBeforeSubmit () {
+      this.$validator.validateAll().then((result) => {
+        if (result) {
+          // eslint-disable-next-line
+          alert('Form Submitted!')
+          return
+        }
+        var btn = document.getElementById('submit-btn')
+        btn.disabled = true
+      })
     }
   },
   directives: {mask}

@@ -1,65 +1,93 @@
 <template>
   <div>
       <section>
-       
-        <table border="0" cellspacing="0" cellpadding="0" width="470" style="width: 470px;">
-            <tbody>
-                <tr valign="top">
-                    <td style="padding-left:10px; width: 10px; padding-right:10px;">
-                        <img src="https://s3.amazonaws.com/ucwebapp.wisestamp.com/627aa923-c980-4ecf-82e3-3bcd0d11e937/treehousecnlogo.format_png.resize_200x.png#logo"
-                            width="65" height="53.3994334278" alt="photo" style="border-radius: 0px; width: 170px; height: auto; max-width: 170px;"> </td>
-                    <td style="border-right: 1px solid #45668e;"></td>
-                    <td style="text-align:initial; font:12px Arial;color:#646464;padding:0 10px">
-                        <div>
-                            <b style="color: #6fac44; font-size:14px">{{fullName}}</b>
-                            <br>
-                            <span style="display:block">
-                                <em>{{title}}</em>
-                            </span>
-                            <span style="display:block">Treehouse Internet Group</span>
-                        </div>
-                        <div style="color:#8d8d8d;font-size:14px;padding:5px 0">
-                            <a href="tel:1-203-463-9563" style="color:#8d8d8d">
-                                <strong>{{phone}}</strong>
-                            </a>
-
-                            <span style="display:block;">
-                                <a href="http://www.treehouseinternetgroup.com" target="_blank" style="color:#8d8d8d;">www.treehouseinternetgroup.com</a>
-                            </span>
-
-                            <span style="color:#8d8d8d; display:block;">{{email}}</span>
-                        </div>
-                        <div style="margin-top: 5px">
-                            <table border="0" cellpadding="0" cellspacing="0">
-                                <tbody>
-                                    <tr style="padding-top: 10px;">
-                                        <td align="left" style="padding-right: 5px;text-align: center;">
-                                            <a href="http://www.facebook.com/treehouseinternetgroup/" target="_blank">
-                                                <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;"
-                                                    width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/facebook_sig.png">
-                                            </a>
-                                        </td>
-                                        <td align="left" style="padding-right: 5px;text-align: center;">
-                                            <a href="http://www.linkedin.com/company/10449254/" target="_blank">
-                                                <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;"
-                                                    width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/linkedin_sig.png">
-                                            </a>
-                                        </td>
-                                        <td align="left" style="padding-right: 5px;text-align: center;">
-                                            <a href="http://www.instagram.com/treehouseinternetgroup/" target="_blank">
-                                                <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;"
-                                                    width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png">
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        </div>
-                    </td>
+        <table cellpadding="0" cellspacing="0" border="0" style=
+        "background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+        <tr>
+            <td valign="top" style=
+            "padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 7px; border-top: 0; border-bottom: 0: border-left: 0; border-right: solid 2px #6fac44">
+            <img width="175"
+                    height="144" style="width: 175px; max-width: 175px !important; height: 144px; max-height: 144px !important;"id="preview-image-url" src=
+            "https://s3.amazonaws.com/ucwebapp.wisestamp.com/627aa923-c980-4ecf-82e3-3bcd0d11e937/treehousecnlogo.format_png.resize_200x.png#logo"
+              name="preview-image-url" />
+            </td>
+            <td style=
+            "padding-top: 0; padding-bottom: 0; padding-left: 12px; padding-right: 0;">
+            <table cellpadding="0" cellspacing="0" border="0" style=
+            "background: none; border-width: 0px; border: 0px; margin: 0; padding: 0;">
+              <tr>
+                  <td colspan="2" style=
+                  "padding-bottom: 5px; color: #6fac44; font-size: 18px; font-family: Arial, Helvetica, sans-serif;">
+                  {{fullName}}
+                  </td>
                 </tr>
-            </tbody>
+                <tr>
+                  <td colspan="2" style=
+                  "color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                  <em>{{title}}</em>
+                  </td>
+                </tr>
+                <tr>
+                  <td width="20" valign="top" style=
+                  "vertical-align: top; width: 20px; color: #6fac44; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                  p:
+                  </td>
+                  <td valign="top" style=
+                  "vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                  {{phone}}
+                  </td>
+                </tr>
+                <tr>
+                  <td width="20" valign="top" style=
+                  "vertical-align: top; width: 20px; color: #6fac44; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                  w:
+                  </td>
+                  <td valign="top" style=
+                  "vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                  <a href="https://www.treehouseinternetgroup.com/" style=
+                  "color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;">
+                    www.treehouseinternetgroup.com</a>
+                    &nbsp;&nbsp;
+                  </td>
+                </tr>
+                <tr>
+                    <td width="20" valign="top" style=
+                    "vertical-align: top; width: 20px; color: #6fac44; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    e:
+                    </td>
+                    <td valign="top" style=
+                    "vertical-align: top; color: #333333; font-size: 14px; font-family: Arial, Helvetica, sans-serif;">
+                    <a :href="`mailto:${this.email}`" style="color: #333333; text-decoration: none; font-weight: normal; font-size: 14px;">{{email}}</a>
+                      &nbsp;&nbsp;
+                    </td>
+                  </tr>
+                <tr>
+                  <td colspan="2" style="padding-top: 5px;">
+                    <a href="http://www.facebook.com/treehouseinternetgroup/" target="_blank" style=
+                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
+                    height="20" style=
+                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    src=
+                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/facebook_sig.png" /></a>&nbsp;&nbsp;<a href="http://www.linkedin.com/company/10449254/" target="_blank"
+                    style=
+                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
+                    height="20" style=
+                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    src=
+                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/linkedin_sig.png" /></a>&nbsp;&nbsp;<a href="http://www.instagram.com/treehouseinternetgroup/" target="_blank"
+                    style=
+                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
+                    height="20" style=
+                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    src=
+                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/instagram_sig.png" /></a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
         </table>
+    
     </section>
   </div>
 </template>

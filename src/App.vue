@@ -24,12 +24,13 @@
             <inputInformation :fullName.sync="fullName" :title.sync="title" :phone.sync="phone" :email.sync="email" />
 
 <!----------------- Button ---------------->   
-            <button @click="toggleShow, $modal.show('output')" class="button is-success" type="submit" v-bind:disabled="!isValid">
+            <button @click="toggleShow, $modal.show('output')" class="button is-success" type="submit" :disabled="!isValid">
                 Copy Signature
             </button>
-            <button @click.prevent="reset" class="button is-success" type="submit" v-bind:disabled="!isReset">
+            <button @click.prevent="reset" class="button is-success" type="submit" :disabled="!isReset">
                 Reset
             </button>
+
 
           </div>
 <!----------------- Output Signature ---------------->       
@@ -41,7 +42,7 @@
       </div>
  <!----------------- Modal ---------------->    
  
-        <modal name="output" :height="350">
+        <modal name="output" :height="440">
          
           <div class="sign-box level-item has-text-centered">
               <div class="output-btn">
@@ -58,7 +59,12 @@
           </div>
 
           <div class="gif-box level-item has-text-centered">
-              <p>1. Place cursor at bottom-right corner of <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="http://cdn2.hubspot.net/hubfs/184235/dev_images/signature_app/instagram_sig.png"> click and drag to the top-left corner of the Treehouse logo and copy. <br> 2. Paste into your Outlook signature preferences panel.</p>
+            <ul>
+              <li>1. Place cursor at bottom-right corner of <img style="border-radius:0;moz-border-radius:0;khtml-border-radius:0;o-border-radius:0;webkit-border-radius:0;ms-border-radius:0;border: 0;width:16px; height:16px;" width="16" height="16" src="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/instagram_sig.png"> click and drag to the top-left corner of the Treehouse logo and copy</li>
+              <li>2. Paste into your Outlook signature preferences panel</li>
+              <li>3. Adjust logo size if needed</li>
+              <li>4. Result may look funny in Signature preferences, but try in a new message</li>
+            </ul>
           <img src="./assets/copy.gif" alt="">
         </div>
           </modal>
@@ -66,7 +72,7 @@
     </div>
  
 <!----------------- Footer ---------------->
-    <footer class="footer" id="footer">
+    <footer class="" id="footer">
         <div class="container">
             <div class="content has-text-centered">
                 <p>
@@ -128,6 +134,13 @@ export default {
 
 <!-------------------------- Styles ---------------------------->
 <style scoped>
+
+
+li {
+  padding-left: 15px; 
+  text-indent: -15px;
+}
+
 .output-btn {
     right: 0;
     position: absolute;
@@ -144,6 +157,10 @@ export default {
   background-color: #efefef;
   padding: 20px;
   border-top: 1px dashed #6fac44;
+}
+.gif-box ul {
+    text-align:left;
+    font-size: 14px;
 }
 .gif-box p {
    text-align: left;
@@ -170,11 +187,13 @@ input:disabled {
   margin-top: 40px;
 }
 #footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
-  height: 30px;
-  width: 100%;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    height: 45px;
+    width: 100%;
+    background-color: #efefef;
+    padding-top: 10px;
 }
 #input-info {
   margin-right: 100px;
