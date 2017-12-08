@@ -5,7 +5,7 @@
 
 ## References
 [Live demo](https://chrisroselli.github.io/email-signature-generator)  
-[Codesandbox](https://codesandbox.io/s/lyvp88rxrl)  
+[Codesandbox](https://codesandbox.io/s/github/chrisroselli/email-signature-generator/tree/master/)  
 [Vue Webpack boilerplate](https://github.com/vuejs-templates/webpack)  
 [Bulma CSS framework](https://bulma.io/)  
 
