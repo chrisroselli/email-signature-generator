@@ -4,9 +4,9 @@
 
 
 ## References
-[Live demo](https://chrisroselli.github.io/email-signature-generator) 
+[Live demo](https://chrisroselli.github.io/email-signature-generator)  
 [Codesandbox](https://codesandbox.io/s/lyvp88rxrl)  
-[Bulma CSS framework](https://bulma.io/) 
+[Bulma CSS framework](https://bulma.io/)  
 
 
 
