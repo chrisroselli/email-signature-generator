@@ -1,6 +1,12 @@
 # Email Signature Generator for Microsoft Outlook
 
-> A Vue.js project
+> A Vue.js ^2.5.2 project
+
+
+## References
+[Live App](https://chrisroselli.github.io/email-signature-generator)  
+[Bulma CSS framework](https://bulma.io/) 
+
 
 ## Build Setup
 

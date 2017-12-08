@@ -7,7 +7,7 @@
             <td valign="top" style=
             "padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 7px; border-top: 0; border-bottom: 0: border-left: 0; border-right: solid 2px #6fac44">
             <img width="175"
-                    height="144" style="width: 175px; max-width: 175px !important; height: 144px; max-height: 144px !important;"id="preview-image-url" src=
+                    height="144" style="width: 175px; max-width: 175px !important; height: 144px; max-height: 144px !important;" id="preview-image-url" src=
             "https://s3.amazonaws.com/ucwebapp.wisestamp.com/627aa923-c980-4ecf-82e3-3bcd0d11e937/treehousecnlogo.format_png.resize_200x.png#logo"
               name="preview-image-url" />
             </td>
@@ -112,11 +112,6 @@ export default {
     email: {
       type: String,
       required: true
-    }
-  },
-  data () {
-    return {
-
     }
   }
 }

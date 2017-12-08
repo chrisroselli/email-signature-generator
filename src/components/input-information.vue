@@ -48,7 +48,6 @@
 </template>
 
 <script>
-import {mask} from 'vue-the-mask'
 export default {
   name: 'inputInformation',
   props: {
@@ -68,21 +67,7 @@ export default {
       type: String,
       required: true
     }
-  },
-  methods: {
-    validateBeforeSubmit () {
-      this.$validator.validateAll().then((result) => {
-        if (result) {
-          // eslint-disable-next-line
-          alert('Form Submitted!')
-          return
-        }
-        var btn = document.getElementById('submit-btn')
-        btn.disabled = true
-      })
-    }
-  },
-  directives: {mask}
+  }
 }
 </script>
 
