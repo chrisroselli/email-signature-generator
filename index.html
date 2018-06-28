@@ -3,15 +3,188 @@
   <head>
 
     <meta charset="utf-8">
-    <title>Email Signature Generator</title>
+ 
   </head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel=stylesheet href="//fonts.googleapis.com/icon?family=Material+Icons"> 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
-  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
-  <link rel="shortcut icon" href="https://dc69b531ebf7a086ce97-290115cc0d6de62a29c33db202ae565c.ssl.cf1.rackcdn.com/687/favicon.ico">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">  
+  <link rel="stylesheet" href="http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/1470/vuetify-7.css">  
+  
+  <style>
+    textarea {
+    margin:0
+    }
+    </style>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/vuetify@0.17.4/dist/vuetify.min.js"></script>
   <body>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
+
+    
+      <div id="apps">
+          <v-app id="inspire">
+            <v-card flat>
+            <form action="" method="post" id="">
+                <v-container grid-list-xl fluid>
+                  <v-layout wrap>
+                    <v-flex xs12 sm6>
+                      <v-text-field
+                        color="green"
+                        label="First name"
+                        v-model="form.first"
+                        :rules="rules.name"
+                        name="form_logger_First_Name"
+                      ></v-text-field>
+                    </v-flex>
+                    <v-flex xs12 sm6>
+                      <v-text-field
+                        color="green"
+                        label="Last name"
+                        v-model="form.last"
+                        :rules="rules.name"
+                        name="form_logger_Last_Name"
+                      ></v-text-field>
+                    </v-flex>
+                    <v-flex xs12 sm6>
+                        <v-text-field
+                          color="green"
+                          label="E-mail"
+                          v-model="form.email"
+                          :rules="rules.email"
+                          name="form_logger_Email"
+                        ></v-text-field>
+                      </v-flex>
+                      <v-flex xs12 sm6>
+                        <v-text-field
+                          color="green"
+                          label="Phone"
+                          v-model="form.phone"
+                          :rules="rules.phone"
+                          name="form_logger_Phone"
+                          :mask="mask"
+                        ></v-text-field>
+                      </v-flex>
+                    <v-flex xs12>
+                      <v-text-field
+                        color="green"
+                        multi-line
+                        name="form_logger_Job_History"
+                        :rules="rules.textbox"
+                        v-model="form.history"
+                      >
+                        <div slot="label">
+                          Job History 
+                        </div>
+    
+                      </v-text-field>
+                    </v-flex>
+                    <v-flex xs12>
+                        <v-text-field
+                          color="green"
+                          multi-line
+                          name="form_logger_Reason_for_Leaving_Past_Job"
+                          :rules="rules.textbox"
+                          v-model="form.reason"
+                        >
+                          <div slot="label">
+                              Reason for Leaving Past Job 
+                          </div>
+                        </v-text-field>
+                      </v-flex>
+                      <v-flex xs12>
+                          <v-text-field
+                            color="green"
+                            multi-line
+                            name="form_logger_Criminal History"
+                            :rules="rules.textbox"
+                            v-model="form.criminal"
+                          >
+                            <div slot="label">
+                                Criminal History 
+                            </div>
+                          </v-text-field>
+                        </v-flex>
+                      <v-flex xs12>
+                          <v-text-field
+                            color="green"
+                            multi-line
+                            name="form_logger_References"
+                            :rules="rules.textbox"
+                            v-model="form.references"
+                          >
+                            <div slot="label">
+                                References 
+                            </div>
+                          </v-text-field>
+                        </v-flex>
+                  </v-layout>
+                  <v-layout row wrap>
+                      <v-flex xs4 offset-xs4>
+                        <v-card>
+                          <v-card-text><input class="submit" name="send" type="submit" value="Send" id="save"></v-card-text>
+                        </v-card>
+                      </v-flex>
+                    </v-layout>
+                </v-container>
+    
+              </form>
+            </v-card>
+          </v-app>
+        </div>
+    
+    <script>
+    new Vue({
+      el: '#apps',
+      data () {
+        const defaultForm = Object.freeze({
+          first: '',
+          last: '',
+          email: '',
+          phone: '',
+          history: '',
+          reason: '',
+          criminal: '',
+          references: ''
+        })
+    
+        return {
+          form: Object.assign({}, defaultForm),
+          rules: {
+            name: [
+            (v) => !!v || 'Field is required',
+            (v) => /^[a-zA-Z -]*$/.test(v) || 'Field must be valid'
+          ],
+            textbox: [
+              (v) => !!v || 'Field is required',
+              (v) => /[\s\S]*/.test(v) || 'Field must be valid'
+          ],
+            email: [
+            (v) => !!v || 'E-mail is required',
+            (v) => /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) || 'E-mail must be valid'
+          ],
+            phone: [
+            (v) => !!v || 'Phone number is required',
+            (v) => /^\(?([0-9]{3})\)?[-.●]?([0-9]{3})[-.●]?([0-9]{4})$/.test(v) || 'Phone number must be valid'
+          ]
+          },
+          defaultForm,
+          value: '',
+          mask: 'phone'
+        }
+      },
+    
+      computed: {
+        formIsValid () {
+          return (
+            this.form.first &&
+            this.form.last &&
+            this.form.email &&
+            this.form.phone &&
+            this.form.history &&
+            this.form.reason &&
+            this.form.criminal &&
+            this.form.references 
+          )
+        }
+      }
+    })
+    </script>
   </body>
 </html>
