@@ -63,24 +63,24 @@
                   </tr>
                 <tr>
                   <td colspan="2" style="padding-top: 5px;">
-                    <a href="http://www.facebook.com/treehouseinternetgroup/" target="_blank" style=
+                    <a href="https://www.facebook.com/treehouseinternetgroup/" target="_blank" style=
                     "border-width:0px; border:0px; text-decoration: none;"><img width="20"
                     height="20" style=
                     "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
                     src=
-                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/facebook_sig.png" /></a>&nbsp;&nbsp;<a href="http://www.linkedin.com/company/10449254/" target="_blank"
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/facebook_sig.png" /></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/10449254/" target="_blank"
                     style=
                     "border-width:0px; border:0px; text-decoration: none;"><img width="20"
                     height="20" style=
                     "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
                     src=
-                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/linkedin_sig.png" /></a>&nbsp;&nbsp;<a href="http://www.instagram.com/treehouseinternetgroup/" target="_blank"
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/linkedin_sig.png" /></a>&nbsp;&nbsp;<a href="https://www.instagram.com/treehouseinternetgroup/" target="_blank"
                     style=
                     "border-width:0px; border:0px; text-decoration: none;"><img width="20"
                     height="20" style=
                     "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
                     src=
-                    "http://d6449bb3dc657045bfc9-290115cc0d6de62a29c33db202ae565c.r80.cf1.rackcdn.com/687/instagram_sig.png" /></a>
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/instagram_sig.png" /></a>
                   </td>
                 </tr>
               </table>
