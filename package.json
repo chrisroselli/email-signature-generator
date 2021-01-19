@@ -16,7 +16,7 @@
     "homepage": "https://github.com/chrisroselli/email-signature-generator"
   },
   "dependencies": {
-    "buefy": "^0.5.4",
+    "buefy": "^0.7.2",
     "bulma": "^0.6.1",
     "vue": "^2.5.2",
     "vue-cleave": "^1.2.2",
