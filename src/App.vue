@@ -5,7 +5,7 @@
       <div class="hero-body">
         <div class="container">
           <div class="th-logo has-text-centered">
-              <img src="https://cdn.treehouseinternetgroup.com/cms_images/687/treehouse-2017-all_white-2.png" alt="" width="250" />
+              <img src="https://cdn.treehouseinternetgroup.com/cms_images/687/th-marketing-logo-KO-sign.png" alt="" width="250" />
           </div>
         <h1 class="sub-text title has-text-centered">
             <p>Email Signature Generator</p> 
