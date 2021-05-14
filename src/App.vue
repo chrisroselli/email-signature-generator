@@ -76,7 +76,7 @@
         <div class="container">
             <div class="content has-text-centered">
                 <p>
-                    &copy;2017 Treehouse Internet Group Inc.
+                    &copy;2021 Treehouse Marketing Inc.
                 </p>
             </div>
         </div>
