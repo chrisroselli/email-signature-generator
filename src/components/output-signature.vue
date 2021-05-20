@@ -8,7 +8,7 @@
             "padding-top: 0; padding-bottom: 0; padding-left: 0; padding-right: 7px; border-top: 0; border-bottom: 0: border-left: 0; border-right: solid 2px #6fac44">
             <img width="175"
                     height="144" style="width: 175px; max-width: 175px !important; height: 144px; max-height: 144px !important;" id="preview-image-url" src=
-            "https://cdn.treehouseinternetgroup.com/cms_images/687/treehouse_logo_bkg.jpg"
+            "https://cdn.treehouseinternetgroup.com/cms_images/687/treehouse-mktg-branch_logo_sign.jpg"
               name="preview-image-url" />
             </td>
             <td style=
@@ -64,23 +64,31 @@
                 <tr>
                   <td colspan="2" style="padding-top: 5px;">
                     <a href="https://www.facebook.com/treehouseinternetgroup/" target="_blank" style=
-                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
-                    height="20" style=
-                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    "border-width:0px; border:0px; text-decoration: none;">
+                    <img width="22"
+                    height="22" style=
+                    "border: none; width: 22px; max-width: 22px !important; height: 22px; max-height: 22px !important;"
                     src=
-                    "https://cdn.treehouseinternetgroup.com/cms_images/687/facebook_sig.png" /></a>&nbsp;&nbsp;<a href="https://www.linkedin.com/company/10449254/" target="_blank"
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/facebook-social-media-icon.png" />
+                    </a>&nbsp;&nbsp;
+                    <a href="https://www.linkedin.com/company/10449254/" target="_blank"
                     style=
-                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
-                    height="20" style=
-                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    "border-width:0px; border:0px; text-decoration: none;">
+                    <img width="22"
+                    height="22" style=
+                    "border: none; width: 22px; max-width: 22px !important; height: 22px; max-height: 22px !important;"
                     src=
-                    "https://cdn.treehouseinternetgroup.com/cms_images/687/linkedin_sig.png" /></a>&nbsp;&nbsp;<a href="https://www.instagram.com/treehouseinternetgroup/" target="_blank"
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/linkedin-social-media-icon.png" /></a
+                    >&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/treehouseinternetgroup/" target="_blank"
                     style=
-                    "border-width:0px; border:0px; text-decoration: none;"><img width="20"
-                    height="20" style=
-                    "border: none; width: 20px; max-width: 20px !important; height: 20px; max-height: 20px !important;"
+                    "border-width:0px; border:0px; text-decoration: none;">
+                    <img width="22"
+                    height="22" style=
+                    "border: none; width: 22px; max-width: 22px !important; height: 22px; max-height: 22px !important;"
                     src=
-                    "https://cdn.treehouseinternetgroup.com/cms_images/687/instagram_sig.png" /></a>
+                    "https://cdn.treehouseinternetgroup.com/cms_images/687/instagram-social-media-icon.png" />
+                    </a>
                   </td>
                 </tr>
               </table>
