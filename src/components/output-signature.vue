@@ -63,7 +63,7 @@
                   </tr>
                 <tr>
                   <td colspan="2" style="padding-top: 5px;">
-                    <a href="https://www.facebook.com/treehouseinternetgroup/" target="_blank" style=
+                    <a href="https://www.facebook.com/foreverybranchofyourmarketing" target="_blank" style=
                     "border-width:0px; border:0px; text-decoration: none;">
                     <img width="22"
                     height="22" style=
@@ -80,7 +80,7 @@
                     src=
                     "https://cdn.treehouseinternetgroup.com/cms_images/687/linkedin-social-media-icon.png" /></a
                     >&nbsp;&nbsp;
-                    <a href="https://www.instagram.com/treehouseinternetgroup/" target="_blank"
+                    <a href="https://www.instagram.com/treehouse__marketing" target="_blank"
                     style=
                     "border-width:0px; border:0px; text-decoration: none;">
                     <img width="22"
